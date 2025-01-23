@@ -1,3 +1,5 @@
 provider "aws" {
-  region     = "us-east-1" # Change to your preferred region
+  region = "ap-south-1"
+  profile = "default" # Use your AWS CLI profile name
 }
+
