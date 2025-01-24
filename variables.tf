@@ -1,9 +1,9 @@
 variable "instance_type" {
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "ami_id" {
-  default = "ami-04178e66cb02cb2f9"
+  default = "ami-023a307f3d27ea427"
 }
 
 variable "key_name" {
