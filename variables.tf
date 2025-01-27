@@ -10,3 +10,8 @@ variable "key_name" {
   default = "aws"
 }
 
+variable "root_volume_size" {
+  description = "The size of the root volume (in GB) for the EC2 instance"
+  default     = 15
+}
+

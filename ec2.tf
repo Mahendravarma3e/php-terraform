@@ -4,6 +4,11 @@ resource "aws_instance" "php_server" {
   key_name      = var.key_name
   vpc_security_group_ids = [aws_security_group.web_sg.id]
 
+root_block_device {
+    volume_size = var.root_volume_size
+    volume_type = "gp2"
+  }
+
   user_data = <<-EOF
               #!/bin/bash
               set -e  # Exit immediately if a command exits with a non-zero status
